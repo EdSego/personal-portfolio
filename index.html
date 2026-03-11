@@ -3,86 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume of Edwin Segovia | IT Professional</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Edwin Segovia | Portfolio</title>
+    <meta name="description" content="Portfolio landing page for Edwin Segovia, a Technical Support Specialist and Computer Science student.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <header>
-        <h1>Edwin Segovia</h1>
-        <img src="./Assets/images/Edwin.JPG" height="200" />
-
+    <header class="site-header">
+        <a class="brand" href="#top">Edwin Segovia</a>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    
-   <section>
-        <h2>Summary</h2>
-         <p>
-             Results-oriented and adaptable IT support and operations professional with experience in customer service and
-             technical support.
-        </p>
-   </section>
-   
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelors of Science in Computer Science - California State University, Fullerton (in-progress) </li>
-            <li>Associates of Science in Computer Science - Santa Ana College, 2024</li>
-            <li>Programming Certificate - Santa Ana College, 2024</li>
-            <li>High School Diploma - Godinez Fundamental High School, 2013</li>
-        </ul>
 
-    </section>
+    <main id="top">
+        <section class="hero section">
+            <div class="hero-copy">
+                <p class="eyebrow">Technical Support Specialist and Computer Science Student</p>
+                <h1>Practical technical support experience with a growing builder's mindset.</h1>
+                <p class="hero-text">I help solve complex hardware and software issues, support enterprise clients, and build software projects that strengthen my foundation in development, systems, and problem solving.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">View Projects</a>
+                    <a class="button button-secondary" href="./Assets/Public_Safe.pdf">View Resume</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <img src="./Assets/images/Edwin.JPG" alt="Portrait of Edwin Segovia">
+                <ul class="highlights">
+                    <li>Enterprise technical support</li>
+                    <li>Root-cause analysis and diagnostics</li>
+                    <li>B.S. Computer Science in progress</li>
+                </ul>
+            </div>
+        </section>
 
-    <section>
-            <h2>Work Experience</h2>
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>Support-focused, detail-oriented, and always building forward.</h2>
+            </div>
+            <div class="about-grid">
+                <p>I am a Technical Support Specialist with experience supporting enterprise clients, troubleshooting hardware and software issues, and partnering with engineering and QA teams to turn customer problems into actionable technical solutions. Alongside my professional work, I am earning my Bachelor of Science in Computer Science and building projects that strengthen my development, troubleshooting, and systems knowledge.</p>
+                <div class="fact-grid">
+                    <div class="fact-card">
+                        <span class="fact-label">Location</span>
+                        <strong>Santa Ana, California</strong>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-label">Current Role</span>
+                        <strong>Technical Support Specialist</strong>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-label">Education</span>
+                        <strong>B.S. Computer Science, in progress</strong>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-label">Focus</span>
+                        <strong>Support, diagnostics, and software growth</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <article>
-    <ul>
-        <h3>Technical Support Specialist - IPCMobile</h3>
-        <p><strong>May 2017 - Present</strong></p>
-        <ul>
-            <li>
-                To facilitate customers with company’s products and to act as a liaison, provide product/services information and resolve any emerging problems that our customers might face with accuracy and efficiency.
-            </li>
-            
-            <li>
-                Research, diagnose, troubleshoot, and identify problem and possible solutions to resolve customer Hardware & Software issues.
-            </li>
-            <li>
-            	Support in the development of comprehensive training program for technical support and sales personnel and facilitate the implementation of training programs as needed.
-            </li>
-        </ul>
-    </article>
-    <article>
-        <h3>Production Supervisor - IPCMobile</h3>
-        <p><strong>May 2016 - May 2017</strong></p>
-        <ul>
-            <li>To facilitate in the coordination of resources and materials for production activities. Responsibility includes the production of finish goods and raw materials on time to meet the demands of the customer. Oversees assembly, rework, and configuration of subassembly and finish products to ensure adherence to established standards of quality, and functionality. Also responsible for operating mechanical and electrical equipment to assemble and build products to standard requirements. Familiar with a variety of the field's concepts, practices, and procedures. Relies on extensive experience and judgment to plan and accomplish goals. A wide degree of creativity and latitude is expected.
-            </li>
-        </ul>
-    </article>
-    <article>
-    <h3>Production Assembler - IPCMobile</h3>
-    <p><strong>Jan 2015 - May 2016</strong></p>
-        <ul>
-            <li>Perform all activities required in the production of finish goods including; configuration, conversion, assembly, and rework of company’s products. Prepare production documentation as needed, familiar with the use of manual and power hand-tools for assembly/disassembly of company products.
-            </li>
-        </ul>
-    </ul>
-    </article>
-</section>
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Projects</p>
+                <h2>A few examples of how I am applying technical skills in practice.</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>QuickInvoice</h3>
+                    <p>A mobile invoicing app designed for non-technical users with an emphasis on clean workflows, reliable local storage, and easy PDF generation.</p>
+                    <p class="meta">Swift, SwiftUI, SwiftData</p>
+                    <a class="project-link" href="https://github.com/EdSego/QuickInvoice">View Project</a>
+                </article>
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal website built to present my background, technical experience, and project work in a clear and approachable format.</p>
+                    <p class="meta">HTML, CSS</p>
+                    <a class="project-link" href="https://github.com/EdSego/personal-portfolio">View Project</a>
+                </article>
+                <article class="project-card">
+                    <h3>Technical Support Workflow Improvements</h3>
+                    <p>Hands-on support work involving troubleshooting, documentation, onboarding guidance, and collaboration with engineering teams to clarify bugs and reduce setup friction.</p>
+                    <p class="meta">Diagnostics, documentation, client support</p>
+                </article>
+            </div>
+        </section>
 
-  <section>
-    <h3>Skills</h3>
- </section>
-    <div class="navbar">
-        <a href="/index.html" class="active">Home</a>
-        <a href="./Public/my_hobbies.html">My Hobbies</a>
-        <a href="./Public/contact_me.html">Contact me</a>
-    </div>
-       
-    <footer>
-        <p>© Edwin Segovia. All rights reserved.</p>
+        <section id="resume" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Resume</p>
+                <h2>Experience, education, and technical skills at a glance.</h2>
+            </div>
+            <div class="resume-grid">
+                <article class="resume-card">
+                    <h3>Experience Highlights</h3>
+                    <ul>
+                        <li>Lead technical support for enterprise clients with deep-dive diagnostics and root-cause analysis.</li>
+                        <li>Manage multi-channel support workflows across Zendesk and Spiceworks while maintaining strong service levels.</li>
+                        <li>Partner with Engineering and QA teams to document bugs and explain diagnostic findings.</li>
+                        <li>Support internal data workflows with phpMyAdmin and SQL-based updates.</li>
+                    </ul>
+                </article>
+                <article class="resume-card">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>B.S. in Computer Science, California State University, Fullerton, expected May 2027.</li>
+                        <li>A.S. in Computer Science, Santa Ana College, Honors, June 2024.</li>
+                    </ul>
+                </article>
+                <article class="resume-card">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Technical Support, Tier 2 Escalations, Root Cause Analysis, Bug Reporting</li>
+                        <li>SQL, Swift, C++, Java, Objective-C</li>
+                        <li>Zendesk, Spiceworks, Xcode, VS Code, FileMaker, Cisco Webex</li>
+                        <li>Windows 10/11, macOS, iOS, Android, WordPress</li>
+                    </ul>
+                </article>
+            </div>
+            <a class="button button-primary resume-link" href="./Assets/Public_Safe.pdf">Open Full Resume PDF</a>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Open to technical support, IT operations, and early-career development opportunities.</h2>
+            </div>
+            <div class="contact-card">
+                <p>If you would like to connect, collaborate, or discuss opportunities, feel free to reach out.</p>
+                <div class="contact-links">
+                    <a href="mailto:edwin.segovia1@yahoo.com">edwin.segovia1@yahoo.com</a>
+                    <a href="https://www.linkedin.com/in/edwin-segovia-081171231/">LinkedIn</a>
+                    <a href="https://github.com/EdSego">GitHub</a>
+                    <span>Santa Ana, CA</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>� Edwin Segovia</p>
     </footer>
 </body>
 </html>
+
+
+
+
+
