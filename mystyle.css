@@ -49,7 +49,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 0;
+    padding: 1.25rem 1.5rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -60,7 +60,9 @@ a {
 .brand {
     text-decoration: none;
     font-weight: 800;
-    letter-spacing: 0.02em;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+    color: var(--accent)
 }
 
 .site-nav {
@@ -203,9 +205,14 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.about-grid,
+
 .resume-grid {
     display: grid;
+    gap: 1.25rem;
+}
+
+.about-grid {
+    grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
 }
 
@@ -277,6 +284,7 @@ h2 {
 
 @media (max-width: 900px) {
     .hero,
+    .about-grid,
     .project-grid,
     .fact-grid,
     .resume-grid {
