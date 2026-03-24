@@ -17,6 +17,7 @@ The site is designed to stay clean, modern, and easy to host with GitHub Pages.
 - `index.html` - main one-page portfolio layout
 - `mystyle.css` - site styling and responsive layout rules
 - `Assets/Public_Safe.pdf` - public-safe resume PDF
+- `Assets/favicon.ico` - site favicon
 - `Assets/images/Edwin.JPG` - profile image
 
 ## Featured Sections
